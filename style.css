@@ -1,0 +1,74 @@
+section div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Cambiado a flex-start */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en una fila adicional */
+}
+.div-left button {
+  margin: 20px 20px 20px 20px;
+}
+.btn-1,
+.btn-2 {
+  margin: 10px;
+  padding: 5px 5px 5px 5px;
+}
+.btn-1 {
+  background-color: grey;
+  border-radius: 25px 25px 25px 25px;
+  color: black;
+  font-size: 1.5em;
+  font-style: italic;
+}
+.btn-1:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.btn-2 {
+  background-color: rgb(254, 254, 254);
+  border-radius: 25px 25px 25px 25px;
+  color: black;
+  font-size: 1.5em;
+  font-style: italic;
+}
+.btn-2:hover{
+    background-color: grey;
+    color: white;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.titulo {
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: -35%;
+  margin-right: 65%;
+  margin-left: 3%;
+  filter: drop-shadow(10px 10px 3px rgb(28, 28, 28));
+}
+.contenedor .texto::first-line{
+    font-weight: lighter;
+    font-size: 1.5em;
+    
+}
+.div-right {
+  display: flex;
+  justify-content: flex-end;
+  background-size: cover;
+  flex: 1;
+}
+.div-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imagen-contenedor {
+  width: 100%; /* Establecer el ancho al 100% del contenedor */
+  height: auto; /* Para mantener la proporción de la imagen */
+  max-width: 100%; /* Asegurar que no se desborde del contenedor */
+}
